@@ -2,8 +2,11 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { elevation } from "theme/utils";
 
-export const Header = styled.header`
-	background: rgba(0, 0, 0, 0.2);
+export const Header = styled.header.attrs({
+	"data-layout": "row",
+	"data-layout-align": "center center"
+})`
+	background: rgba(0, 0, 0, 0.33);
 	${elevation(2)};
 	margin-bottom: 12px;
 `;
@@ -16,7 +19,7 @@ export const HeaderContent = styled.div.attrs({
 `;
 
 export const HeaderLink = styled(Link).attrs({})`
-	padding: 12px;
+	padding: 32px;
 	color: white;
 	cursor: pointer;
 	transition: all 0.3s ease;
