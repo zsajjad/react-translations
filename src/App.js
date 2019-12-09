@@ -1,26 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { IntlProvider } from "react-intl";
+import "react-material-layout/dist/react-material-layout.min.css";
+
+import "./App.css";
+
+import routes from "router/routes";
+
+import Header from "components/Header";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<IntlProvider locale="en">
+			<Router>
+				<Header />
+				<Switch>
+					{routes.map(route => {
+						const Component = route.component;
+						return (
+							<Route exact key={route.id} path={route.path}>
+								<Component />
+							</Route>
+						);
+					})}
+				</Switch>
+			</Router>
+		</IntlProvider>
+	);
 }
 
 export default App;
