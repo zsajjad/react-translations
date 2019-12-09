@@ -10,7 +10,7 @@ import Theme from "theme/Provider";
 
 function App() {
 	return (
-		<IntlProvider locale="en">
+		<IntlProvider locale="en" textComponent={React.Fragment}>
 			<Theme>
 				<Router>
 					<Header />

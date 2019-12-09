@@ -14,6 +14,14 @@ export default defineMessages({
 	},
 	header: {
 		id: `${scope}.header`,
-		defaultMessage: "This is the RelativeFormatting page!"
+		defaultMessage: "Relative Formats"
+	},
+	updatingIntervalTitle: {
+		id: `${scope}.updatingIntervalTitle`,
+		defaultMessage: "Impact of Update Interval In Seconds props"
+	},
+	numericFormatTitle: {
+		id: `${scope}.numericFormatTitle`,
+		defaultMessage: "Impact of numeric style"
 	}
 });
