@@ -6,18 +6,21 @@ export const Container = styled.header.attrs({
 	"data-layout": "column",
 	"data-layout-align": "start center"
 })`
-	background: rgba(0, 0, 0, 0.75);
-	border: 1px solid black;
+	background: #daebf2;
 	${elevation(1)};
-	margin: 12px;
-	padding: 12px;
+	margin: 24px;
 	border-radius: 12px;
+	overflow: hidden;
 `;
 
 export const Title = styled.h2.attrs({})`
 	text-align: center;
 	margin-bottom: 8px;
 	font-weight: 500;
+	background: #1ca5b8;
+	width: 100%;
+	padding: 12px;
+	${elevation(1)};
 `;
 
 export const Heading = styled.p.attrs({})`
@@ -25,15 +28,12 @@ export const Heading = styled.p.attrs({})`
 	font-weight: 500;
 	margin: 0;
 	margin-top: 8px;
+	display: none;
 `;
 
-export const CodeCnotainer = styled.code.attrs({})`
-	color: white;
-	background: rgba(0, 0, 0, 0.85);
-	border: 1px solid black;
-	padding: 12px;
-	width: calc(100% - 16px);
-	margin: 0 8px;
+export const CodeCnotainer = styled.div.attrs({})`
+	width: calc(100% - 24px);
+	margin: 0 12px;
 	white-space: pre-wrap;
 	text-align: left;
 `;
@@ -42,8 +42,8 @@ export const OutputContainer = styled.div.attrs({})`
 	color: white;
 	font-weight: 500;
 	padding: 12px;
-	width: calc(100% - 16px);
-	background: rgba(0, 0, 0, 0.85);
+	width: calc(100% - 24px);
+	background: #1c1f21;
 `;
 export const ContentContainer = styled.div.attrs({
 	"data-layout": "row",

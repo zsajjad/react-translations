@@ -27,7 +27,7 @@ const GlobalStyle = createGlobalStyle`
     height: 100%;
     width: 100%;
     scroll-behavior: smooth;
-    background: #003143;
+    background: #00708C;
     color: white;
   }
   

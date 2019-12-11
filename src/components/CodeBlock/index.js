@@ -7,8 +7,10 @@
 import React from "react";
 // import PropTypes from 'prop-types';
 // import styled from 'styled-components';
-
 import { FormattedMessage } from "react-intl";
+import SyntaxHighlighter from "react-syntax-highlighter";
+import { tomorrowNight } from "react-syntax-highlighter/dist/esm/styles/hljs";
+
 import messages from "./messages";
 import * as Styled from "./Styled";
 
@@ -21,7 +23,11 @@ function CodeBlock({ title, code, output }) {
 					<Styled.Heading>
 						<FormattedMessage {...messages.codeHeading} />
 					</Styled.Heading>
-					<Styled.CodeCnotainer>{code}</Styled.CodeCnotainer>
+					<Styled.CodeCnotainer>
+						<SyntaxHighlighter language="javascript" style={tomorrowNight}>
+							{code}
+						</SyntaxHighlighter>
+					</Styled.CodeCnotainer>
 				</Styled.ContentBlock>
 				<Styled.ContentBlock>
 					<Styled.Heading>
