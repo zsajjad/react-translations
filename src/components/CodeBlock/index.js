@@ -16,14 +16,20 @@ function CodeBlock({ title, code, output }) {
 	return (
 		<Styled.Container>
 			<Styled.Title>{title}</Styled.Title>
-			<Styled.Heading>
-				<FormattedMessage {...messages.codeHeading} />
-			</Styled.Heading>
-			<Styled.CodeCnotainer>{code}</Styled.CodeCnotainer>
-			<Styled.Heading>
-				<FormattedMessage {...messages.outputHeading} />
-			</Styled.Heading>
-			<Styled.OutputContainer>{output}</Styled.OutputContainer>
+			<Styled.ContentContainer>
+				<Styled.ContentBlock>
+					<Styled.Heading>
+						<FormattedMessage {...messages.codeHeading} />
+					</Styled.Heading>
+					<Styled.CodeCnotainer>{code}</Styled.CodeCnotainer>
+				</Styled.ContentBlock>
+				<Styled.ContentBlock>
+					<Styled.Heading>
+						<FormattedMessage {...messages.outputHeading} />
+					</Styled.Heading>
+					<Styled.OutputContainer>{output}</Styled.OutputContainer>
+				</Styled.ContentBlock>
+			</Styled.ContentContainer>
 		</Styled.Container>
 	);
 }

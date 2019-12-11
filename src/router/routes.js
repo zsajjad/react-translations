@@ -7,6 +7,9 @@ import NumberFormattingTitle from "pages/NumberFormatting/Title";
 import RelativeFormatting from "pages/RelativeFormatting/Loadable";
 import RelativeFormattingTitle from "pages/RelativeFormatting/Title";
 
+import DateFormatting from "pages/DateFormatting/Loadable";
+import DateFormattingTitle from "pages/DateFormatting/Title";
+
 export default [
 	{
 		id: "home",
@@ -25,5 +28,11 @@ export default [
 		path: "/relative",
 		component: RelativeFormatting,
 		title: RelativeFormattingTitle
+	},
+	{
+		id: "date",
+		path: "/date",
+		component: DateFormatting,
+		title: DateFormattingTitle
 	}
 ];

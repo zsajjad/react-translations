@@ -10,10 +10,10 @@ import Helmet from "react-helmet";
 import { FormattedMessage, FormattedRelativeTime } from "react-intl";
 
 import Page from "components/Page";
+import CodeBlock from "components/CodeBlock";
 
 import messages from "./messages";
-import * as Styled from "./Styled";
-import CodeBlock from "components/CodeBlock";
+// import * as Styled from "./Styled";
 
 function RelativeFormatting(/* pageProps */) {
 	return (
@@ -30,13 +30,7 @@ function RelativeFormatting(/* pageProps */) {
 			<Page title={<FormattedMessage {...messages.header} />}>
 				<CodeBlock
 					title={<FormattedMessage {...messages.numericFormatTitle} />}
-					code={`
-						<FormattedRelativeTime
-								value={0}
-								numeric="always"
-								updateIntervalInSeconds={10}
-							/>
-					`}
+					code={`<FormattedRelativeTime \n value={0} \n numeric="always" \n updateIntervalInSeconds={10} \n/>`}
 					output={
 						<FormattedRelativeTime
 							value={0}
@@ -47,13 +41,7 @@ function RelativeFormatting(/* pageProps */) {
 				/>
 				<CodeBlock
 					title={<FormattedMessage {...messages.updatingIntervalTitle} />}
-					code={`
-						<FormattedRelativeTime
-								value={0}
-								numeric="auto"
-								updateIntervalInSeconds={10}
-							/>
-					`}
+					code={`<FormattedRelativeTime \n value={0} \n numeric="auto" \n updateIntervalInSeconds={10} \n />`}
 					output={
 						<FormattedRelativeTime
 							value={0}

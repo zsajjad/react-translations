@@ -27,15 +27,11 @@ const GlobalStyle = createGlobalStyle`
     height: 100%;
     width: 100%;
     scroll-behavior: smooth;
-  }
-
-  #root {
     background: #003143;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+    color: white;
+  }
+  
+  #root {
     color: white;
   }
 
