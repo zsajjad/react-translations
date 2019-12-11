@@ -10,11 +10,11 @@ export const scope = "app.pages.RelativeFormatting";
 export default defineMessages({
 	title: {
 		id: `${scope}.title`,
-		defaultMessage: "Relative Formats"
+		defaultMessage: "Time Formats"
 	},
 	header: {
 		id: `${scope}.header`,
-		defaultMessage: "Relative Formats"
+		defaultMessage: "Time Formats"
 	},
 	updatingIntervalTitle: {
 		id: `${scope}.updatingIntervalTitle`,
@@ -23,5 +23,9 @@ export default defineMessages({
 	numericFormatTitle: {
 		id: `${scope}.numericFormatTitle`,
 		defaultMessage: "Impact of numeric style"
+	},
+	timeFormats: {
+		id: `${scope}.timeFormats`,
+		defaultMessage: "Displaying Time"
 	}
 });

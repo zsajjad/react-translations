@@ -4,13 +4,14 @@ import { elevation } from "theme/utils";
 
 export const Container = styled.header.attrs({
 	"data-layout": "column",
-	"data-layout-align": "start center"
+	"data-layout-align": "start center",
+	"data-flex": 100
 })`
 	background: #daebf2;
 	${elevation(1)};
-	margin: 24px;
 	border-radius: 12px;
 	overflow: hidden;
+	margin: 12px;
 `;
 
 export const Title = styled.h2.attrs({})`

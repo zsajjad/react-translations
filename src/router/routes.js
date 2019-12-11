@@ -25,7 +25,7 @@ export default [
 	},
 	{
 		id: "relative",
-		path: "/relative",
+		path: "/time",
 		component: RelativeFormatting,
 		title: RelativeFormattingTitle
 	},

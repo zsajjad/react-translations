@@ -7,7 +7,11 @@
 import React from "react";
 // import PropTypes from 'prop-types';
 import Helmet from "react-helmet";
-import { FormattedMessage, FormattedRelativeTime } from "react-intl";
+import {
+	FormattedMessage,
+	FormattedRelativeTime,
+	FormattedTime
+} from "react-intl";
 
 import Page from "components/Page";
 import CodeBlock from "components/CodeBlock";
@@ -19,15 +23,34 @@ function RelativeFormatting(/* pageProps */) {
 	return (
 		<React.Fragment>
 			<Helmet
-				title="Relative Formatting"
+				title="Time Formatting"
 				meta={[
 					{
 						name: "description",
-						content: "Description of RelativeFormatting"
+						content: "Description of Time Formatting"
 					}
 				]}
 			/>
 			<Page title={<FormattedMessage {...messages.header} />}>
+				<CodeBlock
+					title={<FormattedMessage {...messages.timeFormats} />}
+					code={`<FormattedTime \n value={new Date()} \n hour="numeric|2-digit" \n minute="numeric|2-digit" \n/>`}
+					output={
+						<>
+							<FormattedTime
+								value={new Date()}
+								hour="numeric"
+								minute="numeric"
+							/>
+							<br />
+							<FormattedTime
+								value={new Date()}
+								hour="2-digit"
+								minute="2-digit"
+							/>
+						</>
+					}
+				/>
 				<CodeBlock
 					title={<FormattedMessage {...messages.numericFormatTitle} />}
 					code={`<FormattedRelativeTime \n value={0} \n numeric="always" \n updateIntervalInSeconds={10} \n/>`}
