@@ -32,7 +32,6 @@ const GlobalStyle = createGlobalStyle`
   }
   
   #root {
-    color: white;
   }
 
   a {

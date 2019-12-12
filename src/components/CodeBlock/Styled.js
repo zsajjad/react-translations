@@ -8,10 +8,10 @@ export const Container = styled.header.attrs({
 	"data-flex": 100
 })`
 	background: #daebf2;
-	${elevation(1)};
+	${elevation(2)};
 	border-radius: 12px;
-	overflow: hidden;
 	margin: 12px;
+	overflow: hidden;
 `;
 
 export const Title = styled.h2.attrs({})`
@@ -19,9 +19,9 @@ export const Title = styled.h2.attrs({})`
 	margin-bottom: 8px;
 	font-weight: 500;
 	background: #1ca5b8;
+	color: white;
 	width: 100%;
 	padding: 12px;
-	${elevation(1)};
 `;
 
 export const Heading = styled.p.attrs({})`

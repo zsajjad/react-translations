@@ -7,11 +7,9 @@
 import React from "react";
 // import PropTypes from 'prop-types';
 // import styled from 'styled-components';
-import { Link } from "react-router-dom";
+
 import routes from "router/routes";
 
-import { FormattedMessage } from "react-intl";
-import messages from "./messages";
 import * as Styled from "./Styled";
 
 function Header() {

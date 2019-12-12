@@ -7,7 +7,8 @@ export const Header = styled.header.attrs({
 	"data-layout-align": "center center"
 })`
 	background: #012c40;
-	${elevation(2)};
+	color: white;
+	${elevation(3)};
 	margin-bottom: 12px;
 `;
 

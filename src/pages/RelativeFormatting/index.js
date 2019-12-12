@@ -34,13 +34,16 @@ function RelativeFormatting(/* pageProps */) {
 			<Page title={<FormattedMessage {...messages.header} />}>
 				<CodeBlock
 					title={<FormattedMessage {...messages.timeFormats} />}
-					code={`<FormattedTime \n value={new Date()} \n hour="numeric|2-digit" \n minute="numeric|2-digit" \n/>`}
+					code={`<FormattedTime \n value={new Date()} \n hour="numeric|2-digit" \n minute="numeric|2-digit" \n era="short" \n timeZoneName="short" \n/>`}
 					output={
 						<>
 							<FormattedTime
 								value={new Date()}
 								hour="numeric"
 								minute="numeric"
+								second="numeric"
+								era="short"
+								timeZoneName="short"
 							/>
 							<br />
 							<FormattedTime

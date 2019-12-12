@@ -1,9 +1,9 @@
 export function elevation(e) {
-  return `box-shadow: 0 ${e * 5}px ${e * 10}px -${e * 5}px rgba(0, 0, 0, 0.15)`;
+	return `box-shadow: 0 ${e * 5}px ${e * 10}px -${e * 5}px rgba(0, 0, 0, 0.5)`;
 }
 
 export function backgroundImage(e) {
-  return `
+	return `
     background-image: url('${e}');
     background-size: cover;
     background-position: center center;
@@ -12,13 +12,13 @@ export function backgroundImage(e) {
 }
 
 export function backgroundGradient({
-  light,
-  dark,
-  angle = 135,
-  lightPosition = 0,
-  darkPosition = 100,
+	light,
+	dark,
+	angle = 135,
+	lightPosition = 0,
+	darkPosition = 100
 }) {
-  return `
+	return `
     background-image: linear-gradient(${angle}deg, ${light} ${lightPosition}%, ${dark} ${darkPosition}%);
     background: ${light};
     background: -moz-linear-gradient(${angle}deg, ${light} ${lightPosition}%, ${dark} ${darkPosition}%);
@@ -29,7 +29,7 @@ export function backgroundGradient({
 }
 
 export function verticalGradient({ light, dark }) {
-  return `
+	return `
     background-image: linear-gradient(90deg, ${light} 0%, ${dark} 100%);
     background: ${light};
     background: -moz-linear-gradient(90deg, ${light} 0%, ${dark} 100%);
@@ -40,7 +40,7 @@ export function verticalGradient({ light, dark }) {
 }
 
 export function blur(val) {
-  return `
+	return `
   -webkit-filter: blur(${val}px);
   -moz-filter: blur(${val}px);
   -o-filter: blur(${val}px);
@@ -50,7 +50,7 @@ export function blur(val) {
 }
 
 export function numberOfLines(lines) {
-  return `
+	return `
     @supports (-webkit-line-clamp: ${lines}) {
       overflow: hidden;
       text-overflow: ellipsis;

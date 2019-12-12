@@ -1,12 +1,31 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { IntlProvider } from "react-intl";
+import { UnifiedNumberFormat } from "@formatjs/intl-unified-numberformat";
+
 import "react-material-layout/dist/react-material-layout.min.css";
 
 import routes from "router/routes";
 
 import Header from "components/Header";
 import Theme from "theme/Provider";
+
+/**
+ * Adding polyfills for older browsers
+ */
+UnifiedNumberFormat.__addLocaleData(
+	require("@formatjs/intl-unified-numberformat/dist/locale-data/en.json") // locale-data for en
+);
+
+if (!Intl.PluralRules) {
+	require("@formatjs/intl-pluralrules/polyfill");
+	require("@formatjs/intl-pluralrules/dist/locale-data/en"); // Add locale data for en
+}
+
+if (!Intl.RelativeTimeFormat) {
+	require("@formatjs/intl-relativetimeformat/polyfill");
+	require("@formatjs/intl-relativetimeformat/dist/locale-data/en"); // Add locale data for de
+}
 
 function App() {
 	return (

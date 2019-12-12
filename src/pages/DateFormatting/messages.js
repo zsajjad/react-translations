@@ -10,7 +10,7 @@ export const scope = "app.pages.DateFormatting";
 export default defineMessages({
 	title: {
 		id: `${scope}.title`,
-		defaultMessage: "Date Formatting"
+		defaultMessage: "Date Formats"
 	},
 	header: {
 		id: `${scope}.header`,

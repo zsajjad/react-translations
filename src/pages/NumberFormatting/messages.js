@@ -14,6 +14,14 @@ export default defineMessages({
 	},
 	header: {
 		id: `${scope}.header`,
-		defaultMessage: "This is the NumberFormatting page!"
+		defaultMessage: "Number Formatting"
+	},
+	pluralTitle: {
+		id: `${scope}.pluralTitle`,
+		defaultMessage: "Displaying Counts and Plurals"
+	},
+	unitTitle: {
+		id: `${scope}.unitTitle`,
+		defaultMessage: "Displaying Units"
 	}
 });
