@@ -1,6 +1,9 @@
 import Home from "pages/Home/Loadable";
 import HomeTitle from "pages/Home/Title";
 
+import StringFormatting from "pages/StringFormatting/Loadable";
+import StringFormattingTitle from "pages/StringFormatting/Title";
+
 import NumberFormatting from "pages/NumberFormatting/Loadable";
 import NumberFormattingTitle from "pages/NumberFormatting/Title";
 
@@ -16,6 +19,12 @@ export default [
 		path: "/",
 		component: Home,
 		title: HomeTitle
+	},
+	{
+		id: "string",
+		path: "/string",
+		component: StringFormatting,
+		title: StringFormattingTitle
 	},
 	{
 		id: "numbers",
