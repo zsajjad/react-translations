@@ -7,7 +7,7 @@
 import React from "react";
 // import PropTypes from 'prop-types';
 import Helmet from "react-helmet";
-import { FormattedMessage, FormattedDate, FormattedTime } from "react-intl";
+import { FormattedMessage, FormattedDate } from "react-intl";
 
 import Page from "components/Page";
 import CodeBlock from "components/CodeBlock";
@@ -60,6 +60,8 @@ function DateFormatting(/* pageProps */) {
 									year="numeric"
 									month="long"
 									day="2-digit"
+									era="short"
+									dateStyle="short"
 								/>
 								<br />
 								<FormattedDate

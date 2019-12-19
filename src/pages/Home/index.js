@@ -9,7 +9,7 @@ import React from "react";
 import Helmet from "react-helmet";
 import { FormattedMessage } from "react-intl";
 import messages from "./messages";
-import * as Styled from "./Styled";
+// import * as Styled from "./Styled";
 
 function Home(/* pageProps */) {
 	return (

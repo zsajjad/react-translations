@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { elevation } from "theme/utils";
 
 export const Container = styled.header.attrs({
@@ -10,7 +10,7 @@ export const Container = styled.header.attrs({
 	background: #daebf2;
 	${elevation(2)};
 	border-radius: 12px;
-	margin: 12px;
+	margin: 24px 12px;
 	overflow: hidden;
 `;
 
@@ -44,8 +44,10 @@ export const OutputContainer = styled.div.attrs({})`
 	font-weight: 500;
 	padding: 12px;
 	width: calc(100% - 24px);
+	height: 100%;
 	background: #1c1f21;
 `;
+
 export const ContentContainer = styled.div.attrs({
 	"data-layout": "row",
 	"data-layout-align": "center start"
@@ -57,4 +59,6 @@ export const ContentBlock = styled.div.attrs({
 	"data-layout": "column",
 	"data-layout-align": "start center",
 	"data-flex": 50
-})``;
+})`
+	height: 100%;
+`;

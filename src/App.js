@@ -13,15 +13,25 @@ import Theme from "theme/Provider";
 /**
  * Adding polyfills for older browsers
  */
+
+/** Unit display polyfill
+ * https://github.com/formatjs/formatjs/tree/master/packages/intl-unified-numberformat
+ */
 UnifiedNumberFormat.__addLocaleData(
 	require("@formatjs/intl-unified-numberformat/dist/locale-data/en.json") // locale-data for en
 );
 
+/**
+ * Pluralization Polyfill
+ */
 if (!Intl.PluralRules) {
 	require("@formatjs/intl-pluralrules/polyfill");
 	require("@formatjs/intl-pluralrules/dist/locale-data/en"); // Add locale data for en
 }
 
+/**
+ * Relative time formatting Polyfill
+ */
 if (!Intl.RelativeTimeFormat) {
 	require("@formatjs/intl-relativetimeformat/polyfill");
 	require("@formatjs/intl-relativetimeformat/dist/locale-data/en"); // Add locale data for de

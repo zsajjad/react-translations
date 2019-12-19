@@ -40,12 +40,21 @@ function NumberFormatting(/* pageProps */) {
 							<br />
 							<FormattedNumber value={1} />
 							<FormattedPlural value={1} one=" message" other=" messages" />
+							<FormattedPlural
+								value={10}
+								zero="All Caught up"
+								one="Just single message"
+								two="Two message unseen"
+								few="A few message awaiting you"
+								many="A lot of things to catch up"
+								other="messages"
+							/>
 						</>
 					}
 				/>
 				<CodeBlock
 					title={<FormattedMessage {...messages.unitTitle} />}
-					code={`<FormattedNumber \n value={1000} \n style="unit" \n unitDisplay="long|short|narrow" \n unit="" \n/>`}
+					code={`<FormattedNumber \n value={1000} \n style="unit" \n unitDisplay="long|short|narrow" \n unit="kilogram" \n/>`}
 					output={
 						<>
 							<FormattedNumber

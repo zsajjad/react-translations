@@ -42,8 +42,7 @@ function RelativeFormatting(/* pageProps */) {
 								hour="numeric"
 								minute="numeric"
 								second="numeric"
-								era="short"
-								timeZoneName="short"
+								timeZoneName="long"
 							/>
 							<br />
 							<FormattedTime
