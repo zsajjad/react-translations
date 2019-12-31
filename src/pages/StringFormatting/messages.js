@@ -16,8 +16,12 @@ export default defineMessages({
 		id: `${scope}.header`,
 		defaultMessage: "String Formatting"
 	},
-	timeFormats: {
-		id: `${scope}.timeFormats`,
-		defaultMessage: "String Formatting"
+	combination: {
+		id: `${scope}.combination`,
+		defaultMessage: "Combining Formats"
+	},
+	richText: {
+		id: `${scope}.richText`,
+		defaultMessage: "Rich Text Formattig"
 	}
 });

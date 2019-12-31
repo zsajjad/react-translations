@@ -14,6 +14,6 @@ export default defineMessages({
 	},
 	header: {
 		id: `${scope}.header`,
-		defaultMessage: "This is the Home page!"
+		defaultMessage: "React Intl Component API"
 	}
 });
